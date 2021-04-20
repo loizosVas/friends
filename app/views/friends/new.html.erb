@@ -1,0 +1,17 @@
+<!-- CREATE NEW FRIEND -->
+<div class="card">
+
+  <div class="card-header">
+  		<h4>Add a new Friend</h4>
+  </div>
+
+  <div class="card-body">
+
+  	<br>
+    <%= render 'form', friend: @friend %>
+    <br>
+	<%= link_to 'Back', friends_path, class:"btn btn-dark", :style => 'width: -webkit-fill-available' %>
+
+
+  </div>
+</div>

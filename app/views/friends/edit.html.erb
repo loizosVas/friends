@@ -1,0 +1,22 @@
+<!-- EDIT FRIEND -->
+<div class="card">
+
+  <div class="card-header">
+  		<h4>Editing Friend</h4>
+  </div>
+
+  <div class="card-body">
+
+  	<br>
+    <%= render 'form', friend: @friend %>
+    <br>
+
+    <div class="row justify-content-around">	
+	    <%= link_to 'Show', @friend, class:"btn btn-secondary col-5" %>
+		<%= link_to 'Back', friends_path, class:"btn btn-dark col-5"%>
+	</div>
+
+  </div>
+</div>
+
+<br><br>
