@@ -11,6 +11,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'devise', '~> 4.7', '>= 4.7.3'
+#gem 'pg', '~> 1.2', '>= 1.2.3' #WAS HERE WHEN I STARTED
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -18,13 +19,11 @@ end
 
 group :development do
   gem 'web-console', '>= 4.1.0'
-  gem 'sqlite3', '~> 1.4'
-  #gem 'rack-mini-profiler', '~> 2.0' #Removed ms top-left on browser
+  gem 'sqlite3', '~> 1.4' #MOVED TO HERE ON DATABASE CONVERSION
 end
 
 group :production do 
-	gem 'pg', '~> 1.2', '>= 1.2.3'
-	#gem 'rails_12factor', '0.0.2'
+	gem 'pg', '~> 1.2', '>= 1.2.3' #ADDED THIS ON DATABASE CONVERSION
 end
 
 group :test do
